@@ -1,0 +1,41 @@
+$default: #243f4d;
+$orange-20: #fef7f0;
+$orange-90: #fcd7b6;
+$white: #ffffff;
+
+$grey-30: #8b8b8b;
+$grey-40: #7b7b7b;
+$grey-80: #585858;
+
+$silver-30: #edf1f4;
+$silver-50: #dae4e9;
+
+$blue-30: #a3bbc8;
+$blue-50: #436372;
+$blue-70: #234969;
+$purple: #1f2044;
+
+%rubik-400 {
+  font-family: "Rubik-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%rubik-500 {
+  font-family: "Rubik-Medium", sans-serif;
+  font-weight: 500;
+}
+
+%dmsans-400 {
+  font-family: "DMSans-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%dmsans-500 {
+  font-family: "DMSans-Medium", sans-serif;
+  font-weight: 500;
+}
+
+%dmsans-700 {
+  font-family: "DMSans-Bold", sans-serif;
+  font-weight: 700;
+}

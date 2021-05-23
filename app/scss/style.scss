@@ -3,7 +3,215 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  padding: 48px 0 45px;
 
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  display: flex;
+  @extend %rubik-500;
+  font-weight: 600;
+  font-size: 15px;
+  color: $blue-50;
+
+  &__item:not(:last-child) {
+    margin-right: 33px;
+  }
+}
+
+.user-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+
+  &__search,
+  &__btn {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  &__links {
+    width: 178px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+
+  &__links::before {
+    content: "";
+    width: 1px;
+    height: 32px;
+    position: absolute;
+    background-color: $orange-20;
+    z-index: 2;
+  }
+
+  &__search,
+  &__btn,
+  &__link {
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__search {
+    background-image: url(../images/icons/search.svg);
+    background-color: $silver-30;
+  }
+
+  &__btn {
+    background-color: $blue-30;
+    background-image: url(../images/icons/layout.svg);
+    border: none;
+  }
+
+  &__link {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: $orange-90;
+
+    &--liked {
+      background-image: url(../images/icons/heart.svg);
+      border-radius: 25px 0 0 25px;
+    }
+
+    &--cart {
+      background-image: url(../images/icons/cart.svg);
+      border-radius: 0 25px 25px 0;
+    }
+  }
+
+  &__num {
+    position: absolute;
+    top: 8px;
+    right: 25px;
+    width: 17px;
+    height: 17px;
+    background-color: $white;
+    border-radius: 50%;
+    @extend %dmsans-400;
+    font-size: 10px;
+    line-height: 17px;
+    text-align: center;
+  }
+}
+
+.footer {
+  padding: 80px 0 35px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $grey-40;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 72px;
+  border-bottom: 1px solid $silver-50;
+
+  &__contact {
+    width: 200px;
+    font-style: normal;
+  }
+
+  &__logo,
+  &__title {
+    display: inline-block;
+    margin-bottom: 22px;
+  }
+
+  &__title {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    @extend %dmsans-700;
+    font-size: 16px;
+    line-height: 1.3;
+    color: $purple;
+  }
+
+  &__item {
+    margin-bottom: 17px;
+  }
+  
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+  }
+
+  &__news {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+  }
+
+  &__news p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__input,
+  &__button {
+    padding: 12px 15px;
+    border: none;
+  }
+
+  &__input {
+    max-width: 170px;
+    background-color: $orange-20;
+    &::placeholder {
+      color: $blue-70;
+      font-size: 12px;
+    }
+  }
+
+  &__button {
+    background-color: $blue-30;
+    color: $white;
+    width: 100%;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+
+  &__menu {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 25px;
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 16px;
+      width: 1px;
+      position: absolute;
+      right: -12px;
+      top: 0;
+      bottom: 0;
+      background-color: $grey-40;
+    }
+  }
+}
 
 
 

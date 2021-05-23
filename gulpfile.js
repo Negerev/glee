@@ -18,7 +18,7 @@ function browsersync() {
 
 function styles() {
   return src('app/scss/style.scss')  // в [] можно перечислять несколько файлов
-    .pipe(scss({ outputStyle: 'expanded' })) // compresed
+    .pipe(scss({ outputStyle: 'compressed' })) // compresed or expanded
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 10 versions'],

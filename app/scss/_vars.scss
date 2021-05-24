@@ -1,4 +1,4 @@
-$default: #243f4d;
+
 $orange-20: #fef7f0;
 $orange-90: #fcd7b6;
 $white: #ffffff;
@@ -13,6 +13,7 @@ $silver-50: #dae4e9;
 $blue-30: #a3bbc8;
 $blue-50: #436372;
 $blue-70: #234969;
+$blue-80: #243f4d;
 $purple: #1f2044;
 
 %rubik-400 {
@@ -38,4 +39,9 @@ $purple: #1f2044;
 %dmsans-700 {
   font-family: "DMSans-Bold", sans-serif;
   font-weight: 700;
+}
+
+%link-colors {
+  background-color: $blue-30;
+  color: $white;
 }

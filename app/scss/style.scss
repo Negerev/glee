@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header {
@@ -40,7 +41,7 @@
 
   &__links {
     width: 178px;
-    
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -106,6 +107,184 @@
   }
 }
 
+.promo {
+
+  .top-slider {
+    @extend %rubik-500;
+    background-color: $orange-90;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 634px;
+      height: 634px;
+      border-radius: 50%;
+      background: linear-gradient(89deg, rgba(255, 255, 255, 0%) 0%, rgb(255, 255, 255) 100%);
+      position: absolute;
+      top: 50%;
+      left: 52%;
+      transform: translateY(-50%);
+    }
+
+    &__items {
+      z-index: 2;
+    }
+
+    &__item {
+      display: flex !important;
+      justify-content: space-between;
+      align-items: center;
+      height: 820px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: $blue-50;
+        max-width: 375px;
+        margin-bottom: 35px;
+      }
+    }
+
+    &__title {
+      @extend %rubik-500;
+      font-size: 72px;
+      color: $blue-80;
+      text-transform: uppercase;
+      margin-bottom: 35px;
+    }
+
+    &__link {
+      @extend %link-colors;
+      font-size: 15px;
+      width: 200px;
+      padding: 20px 40px 20px 25px;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 25px;
+        height: 10px;
+        background-image: url(../images/icons/arrows-right.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &__image {
+      max-width: 700px;
+    }
+
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 45px;
+
+      li:not(:last-child) {
+        margin-right: 12px;
+      }
+
+      button {
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-size: 11px;
+        opacity: 0.302;
+        padding: 0;
+      }
+
+      .slick-active {
+
+        button {
+          background-color: $white;
+          color: $blue-80;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: $orange-20;
+    @extend %dmsans-400;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      height: 100%;
+      width: 1px;
+      background-color: $silver-30;
+      position: absolute;
+      top: 0;
+    }
+
+    &:before {
+      left: 33%;
+    }
+
+    &:after {
+      right: 33%;
+    }
+  }
+
+  &__item {
+    width: 290px;
+    padding-left: 80px;
+    position: relative;
+
+    p {
+      line-height: 1.8;
+    }
+
+    &::before {
+      content: "";
+      width: 55px;
+      height: 55px;
+      background-repeat: no-repeat;
+      background-position: top, center;
+      position: absolute;
+      left: 0;
+    }
+
+    &--support::before {
+      background-image: url(../images/icons/support.png);
+    }
+
+    &--delivery::before {
+      background-image: url(../images/icons/delivery.png);
+    }
+
+    &--payment::before {
+      background-image: url(../images/icons/payment.png);
+    }
+  }
+
+  &__title {
+    @extend %dmsans-700;
+  }
+}
+
+
+
+
+
 .footer {
   padding: 80px 0 35px;
   font-size: 14px;
@@ -143,7 +322,7 @@
   &__item {
     margin-bottom: 17px;
   }
-  
+
   &__nav {
     display: flex;
     flex-direction: column;
@@ -174,6 +353,7 @@
   &__input {
     max-width: 170px;
     background-color: $orange-20;
+
     &::placeholder {
       color: $blue-70;
       font-size: 12px;

@@ -21,6 +21,10 @@ body {
   margin: 0 auto;
 }
 
+.container--big {
+  max-width: 1800px;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -33,3 +37,5 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+

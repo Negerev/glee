@@ -12,19 +12,19 @@ function browsersync() {
     server: {
       baseDir: 'app/'
     },
-    notofy: false // уведомления
+    notofy: false 
   })
 }
 
 function styles() {
-  return src('app/scss/style.scss')  // в [] можно перечислять несколько файлов
-    .pipe(scss({ outputStyle: 'compressed' })) // compresed or expanded
+  return src('app/scss/style.scss')  
+    .pipe(scss({ outputStyle: 'compressed' }))
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 10 versions'],
       grid: true
     }))
-    .pipe(dest('app/css'))  // почему нельзя использовать src вместо dest
+    .pipe(dest('app/css')) 
     .pipe(browserSync.stream())
 }
 
@@ -32,6 +32,7 @@ function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/mixitup/dist/mixitup.js',
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))

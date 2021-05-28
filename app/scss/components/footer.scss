@@ -1,0 +1,108 @@
+.footer {
+  padding: 80px 0 35px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $grey-40;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 72px;
+  border-bottom: 1px solid $silver-50;
+
+  &__contact {
+    width: 200px;
+    font-style: normal;
+  }
+
+  &__logo,
+  &__title {
+    display: inline-block;
+    margin-bottom: 22px;
+  }
+
+  &__title {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    @extend %dmsans-700;
+    font-size: 16px;
+    line-height: 1.3;
+    color: $purple;
+    text-transform: uppercase;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 17px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+  }
+
+  &__news {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+  }
+
+  &__news p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__input,
+  &__button {
+    padding: 12px 15px;
+    border: none;
+  }
+
+  &__input {
+    max-width: 170px;
+    background-color: $orange-20;
+
+    &::placeholder {
+      color: $blue-70;
+      font-size: 12px;
+    }
+  }
+
+  &__button {
+    background-color: $blue-30;
+    color: $white;
+    width: 100%;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+
+  &__menu {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 25px;
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 16px;
+      width: 1px;
+      position: absolute;
+      right: -12px;
+      top: 0;
+      bottom: 0;
+      background-color: $grey-40;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 
 $orange-20: #fef7f0;
+$orange-30: #feefe2;
 $orange-90: #fcd7b6;
 $white: #ffffff;
 $black: #000000;
@@ -8,41 +9,28 @@ $grey-30: #8b8b8b;
 $grey-40: #7b7b7b;
 $grey-80: #585858;
 
+
+$silver-20: #f8f8f8;
 $silver-30: #edf1f4;
+$silver-40: #e0e0e0;
 $silver-50: #dae4e9;
 
 $blue-30: #a3bbc8;
 $blue-50: #436372;
 $blue-70: #234969;
 $blue-80: #243f4d;
-$purple: #1f2044;
+$blue-90: #1f2044;
 
-%rubik-400 {
-  font-family: "Rubik-Regular", sans-serif;
-  font-weight: 400;
+@mixin overflow  ($line-clamp){
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line-clamp;
 }
 
-%rubik-500 {
-  font-family: "Rubik-Medium", sans-serif;
-  font-weight: 500;
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
 }
-
-%dmsans-400 {
-  font-family: "DMSans-Regular", sans-serif;
-  font-weight: 400;
-}
-
-%dmsans-500 {
-  font-family: "DMSans-Medium", sans-serif;
-  font-weight: 500;
-}
-
-%dmsans-700 {
-  font-family: "DMSans-Bold", sans-serif;
-  font-weight: 700;
-}
-
-%link-colors {
-  background-color: $blue-30;
-  color: $white;
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
 }

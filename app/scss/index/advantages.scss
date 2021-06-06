@@ -1,0 +1,72 @@
+.advantages {
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: $orange-20;
+    font-family: "DMSans", sans-serif;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      height: 100%;
+      width: 1px;
+      background-color: $silver-30;
+      position: absolute;
+      top: 0;
+    }
+
+    &:before {
+      left: 33%;
+    }
+
+    &:after {
+      right: 33%;
+    }
+  }
+
+  &__title {
+    font-family: "DMSans", sans-serif;
+    font-weight: 700;
+    line-height: 1.8;
+    font-size: 18px;
+    @include overflow(1);
+  }
+
+  &__text {
+    line-height: 1.8;
+    color: $grey-80;
+    @include overflow(2);
+  }
+
+  &__item {
+    width: 289px;
+    padding-left: 80px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 55px;
+      height: 55px;
+      background-repeat: no-repeat;
+      background-position: top, center;
+      position: absolute;
+      left: 0;
+    }
+
+    &--support::before {
+      background-image: url(../images/icons/support.png);
+    }
+
+    &--delivery::before {
+      background-image: url(../images/icons/delivery.png);
+    }
+
+    &--payment::before {
+      background-image: url(../images/icons/payment.png);
+    }
+  }
+
+}

@@ -11,22 +11,25 @@
   box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
 
   &__img {
-    margin-bottom: auto;
-    max-height: 255px;
+    margin: auto;
+    max-height: 206px;
   }
 
   &__title {
-    @extend %dmsans-500;
+    font-family: "DMSans", sans-serif;
+    font-weight: 500;
     font-size: 16px;
     color: $blue-80;
+    padding-top: 50px;
     margin-bottom: 12px;
+    text-align: center;
   }
 
   &__price {
     color: $blue-30;
   }
 
-  &__btn-box {
+  &__btns {
     position: absolute;
     bottom: 155px;
     width: 168px;
@@ -37,34 +40,16 @@
   }
 
   &:hover {
-    .product-card__btn-box {
+    .product-card__btns {
       transform: translateY(0);
     }
   }
 
-  &__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 45px;
-    padding: 0;
-    border-radius: 50%;
-    border: 1px solid transparent;
-    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
-    background-color: $white;
-    transition: background-color 0.4s;
 
-    path {
-      transition: fill 0.4s;
-    }
-  }
-
-  &__btn:hover {
-    background-color: $blue-30;
-
-    path {
-      fill: $white;
-    }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: $blue-30;
+    transition: fill 0.4s;
   }
 }

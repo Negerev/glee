@@ -5,15 +5,21 @@
 @import 'global';
 
 
-// homepage
 
 @import 'components/header';
-@import 'index/promo';
-@import 'index/products-week';
+@import 'components/user-btn';
+@import 'components/filter-btns';
 @import 'components/product-card';
+@import 'components/subscribe-form';
+@import 'components/articles';
+@import 'components/partners';
 @import 'components/footer';
 
+// homepage
 
+@import 'index/top-slider';
+@import 'index/advantages';
+@import 'index/products-week';
+@import 'index/design';
+@import 'index/video';
 
-
-@import 'media';

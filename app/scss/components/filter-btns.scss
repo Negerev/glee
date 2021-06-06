@@ -1,0 +1,38 @@
+.filter-btns {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: $grey-30;
+    transition: border-color 0.3s, transform 0.3s, color 0.3s;
+
+    &:focus {
+      color: $black;
+    }
+
+    &:hover {
+      border-bottom-color: $black;
+
+      .user-nav__icon {
+        fill: $white;
+      }
+    }
+
+    &:active {
+      transform: scale(0.85);
+    }
+  }
+  .mixitup-control-active {
+    color: $black;
+  }
+}

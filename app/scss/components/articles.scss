@@ -1,0 +1,124 @@
+.articles {
+  padding-top: 110px;
+
+  &__top {
+    font-family: "DMSans";
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+  }
+
+  &__view {
+    position: relative;
+    padding-right: 25px;
+    transition: color 0.3s, border-color 0.3s, transform 0.3s;
+    border-bottom: 1px solid transparent;
+
+    &::after {
+      content: "";
+      width: 7px;
+      height: 12px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../images/icons/arrow-link.png);
+    }
+
+    &:focus {
+      color: $blue-50;
+    }
+  
+    &:hover {
+      border-color: $black;
+    }
+  
+    &:active {
+      transform: scale(0.85);
+    }      
+
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    &__item {
+      max-width: 370px;
+      width: 100%;
+    }
+
+    &__image {
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      height: 170px;
+      padding: 0 26px 0 30px;
+      position: relative;
+      background-color: $white;
+    }
+
+    &__link {
+      display: block;
+      font-family: "DMSans";
+      font-weight: 500;
+      font-size: 18px;
+      margin: auto 0;
+      border-bottom: 1px solid transparent;
+      @include overflow(3);
+      transition: color 0.3s, border-color 0.3s, transform 0.3s;
+
+      &:focus {
+        color: $blue-50;
+      }
+    
+      &:hover {
+        border-color: $black;
+      }
+    
+      &:active {
+        transform: scale(0.85);
+      }      
+    }
+
+    &__bottom {
+      padding: 17px 0 25px;
+      border-top: 1px solid $silver-40;
+    }
+
+    &__tag {
+      display: inline-block;
+      padding: 8px 30px;
+      position: absolute;
+      top: 0;
+      left: 25px;
+      transform: translateY(-50%);
+      border-radius: 25px;
+      border: 1px solid transparent;
+      font-size: 14px;
+      background-color: $blue-30;
+      color: $white;
+      text-transform: uppercase;
+      transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+
+      &:focus {
+        border-color: $black;
+      }
+    
+      &:hover {
+        background-color: #d0ccc9;
+      }
+    
+      &:active {
+        color: $black;
+      }
+    }
+  }

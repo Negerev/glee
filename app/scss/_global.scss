@@ -6,23 +6,11 @@ body {
 body {
   font-size: 16px;
   line-height: 1.2;
-  @extend %rubik-400;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
-}
-
-.main {
-  flex-grow: 1;
-}
-
-.container {
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.container--big {
-  max-width: 1800px;
+  background-color: $white;
 }
 
 .sr-only {
@@ -38,9 +26,123 @@ body {
   overflow: hidden;
 }
 
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  &--large {
+    max-width: 1230px;
+  }
+
+  &--big {
+    max-width: 1800px;
+  }
+}
+
+.logo__img {
+  max-width: 150px;
+  max-height: 40px;
+}
+
 .title {
   font-size: 36px;
 }
 
+.menu-effects {
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s, color 0.3s, transform 0.3s;
 
+  &:focus {
+    color: red;
+  }
 
+  &:hover {
+    border-color: $black;
+  }
+
+  &:active {
+    transform: scale(0.85);
+  }
+}
+
+.link {
+  position: relative;
+  padding: 20px 40px 20px 25px;
+  background-color: $blue-30;
+  color: $white;
+  border: 1px solid transparent;
+  font-size: 15px;
+  font-weight: 500;
+  transition: transform 0.3s, border-color 0.3s, background-color 0.3s;
+
+  &__icon {
+    width: 25px;
+    height: 10px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: $white;
+  }
+
+  &--slider {
+    width: 200px;
+  }
+
+  &--product-accent {
+    width: 180px;
+    background-color: transparent;
+    border-color: $blue-50;
+    border-radius: 5px;
+    color: $blue-50;
+
+    .link__icon {
+      fill: $blue-50;
+    }
+  }
+
+  &:focus {
+    border-color: $black;
+  }
+
+  &:hover {
+    background-color: #d0ccc9;
+  }
+
+  &:active {
+    transform: scale(0.85);
+  }
+}
+
+.publicated {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-left: 18px;
+
+  &--data {
+    margin-right: 23px;
+  }
+
+  &::before {
+    font-family: "icomoon";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &--data::before {
+    content: "\f073";
+  }
+
+  &--author::before {
+    content: "\f2c0";
+  }
+}

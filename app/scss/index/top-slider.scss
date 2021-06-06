@@ -1,0 +1,117 @@
+.top-slider {
+
+  &__inner {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    background-color: $orange-90;
+    position: relative;
+  }
+
+  &__items {
+    z-index: 2;
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    height: 820px;
+    position: relative;
+    text-align: left;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 430px;
+    padding-bottom: 70px;
+  }
+
+  &__title {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 1;
+    color: $blue-80;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+    @include overflow(2);
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: $blue-50;
+    max-width: 375px;
+    @include overflow(5);
+    margin-bottom: 35px;
+  }
+
+  &__box {
+    position: relative;
+    max-width: 640px;
+    width: 100%;
+
+    &::after {
+      content: "";
+      width: 634px;
+      height: 634px;
+      border-radius: 50%;
+      background: linear-gradient(89deg, rgba(255, 255, 255, 0%) 0%, rgb(255, 255, 255) 100%);
+      position: absolute;
+      top: 50%;
+      right: -115px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__image {
+    position: relative;
+    max-height: 600px;
+    margin: 0 auto;
+    z-index: 5;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 45px;
+
+    li:not(:last-child) {
+      margin-right: 12px;
+    }
+
+    button {
+      border: none;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      width: 30px;
+      height: 30px;
+      font-size: 11px;
+      color: $blue-80;
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 0;
+      transition: border-color 0.3s, transform 0.3s;
+
+      &:hover {
+        border-color: $black;
+      }
+
+      &:active {
+        transform: scale(0.85);
+      }
+    }
+
+    .slick-active {
+
+      button {
+        background-color: $white;
+      }
+    }
+  }
+}

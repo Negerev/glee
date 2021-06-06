@@ -5,6 +5,17 @@ $(function () {
     arrows: false
   });
 
-  var mixer = mixitup('.products-week__items');
+
+  var containerEl1 = document.querySelector('[data-ref="products-week"]');
+  var containerEl2 = document.querySelector('[data-ref="design"]');
+ 
+  var config = {
+    controls: {
+      scope: 'local'
+    }
+  };
+ 
+  var mixer1 = mixitup(containerEl1, config);
+  var mixer2 = mixitup(containerEl2, config);
   
 });

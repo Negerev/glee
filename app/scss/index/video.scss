@@ -1,0 +1,28 @@
+.video {
+  display: block;
+  height: 500px;
+  width: 100%;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 127px;
+    height: 127px;
+    background-image: url(../images/icons/play.png);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform 0.3s;
+  }
+
+  &:hover::before {
+    transform: scale(1.15);
+  }
+
+  &:active::before {
+    transform: scale(0.85);
+  }
+}

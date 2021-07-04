@@ -62,7 +62,7 @@
   &__text {
     line-height: 1.7;
     margin-bottom: 30px;
-    @include overflow(2)
+    @include overflow(4);
   }
 
   &__bottom {

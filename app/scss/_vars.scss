@@ -21,6 +21,12 @@ $blue-70: #234969;
 $blue-80: #243f4d;
 $blue-90: #1f2044;
 
+$screen-sm: 480px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1500px;
+
 @mixin overflow  ($line-clamp){
   overflow: hidden;
   display: -webkit-box;

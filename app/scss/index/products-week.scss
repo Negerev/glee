@@ -18,43 +18,51 @@
     grid-template-rows: 1fr 1fr;
     grid-gap: 40px 30px;
   }
-}
 
-.product-accent {
-  padding-top: 180px;
-
-  &__items {
+  &__list {
     display: flex;
     justify-content: space-between;
+    padding-top: 180px;
   }
 
-  &__item {
+  &__list-item {
     display: flex;
-    flex-direction: column;
+    align-items: flex-end;
     justify-content: center;
-    align-items: flex-start;
     max-width: 870px;
     width: 100%;
     height: 390px;
-    position: relative;
-    padding: 70px 140px 70px 385px;
     background-color: $orange-30;
     color: $blue-80;
+    padding-bottom: 100px;
+  }
+
+  &__list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__article {
+    max-width: 600px;
+    padding: 0 15px 0 250px;
+    position: relative;
+
   }
 
   &__image {
     position: absolute;
-    right: 500px;
-    bottom: 80px;
+    left: 0;
+    bottom: 0;
     max-width: 350px;
     max-height: 400px;
   }
 
-  &__title {
+  &__name {
     font-family: "DMSans", sans-serif;
-    font-weight: 700;
     font-size: 26px;
+    font-weight: 700;
+    text-align: left;
     margin-bottom: 20px;
+    @include overflow(2)
   }
 
   &__text {

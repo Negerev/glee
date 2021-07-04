@@ -1,7 +1,6 @@
 .top-slider {
 
   &__inner {
-    font-family: "Rubik", sans-serif;
     font-weight: 500;
     background-color: $orange-90;
     position: relative;
@@ -22,15 +21,11 @@
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     max-width: 430px;
     padding-bottom: 70px;
   }
 
   &__title {
-    font-family: "Rubik", sans-serif;
     font-weight: 500;
     font-size: 72px;
     line-height: 1;
@@ -69,7 +64,7 @@
 
   &__image {
     position: relative;
-    max-height: 600px;
+    max-height: 500px;
     margin: 0 auto;
     z-index: 5;
   }

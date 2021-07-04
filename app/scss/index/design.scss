@@ -1,6 +1,6 @@
 .design {
   padding-top: 96px;
-  font-family: "DMSans";
+  font-family: "DMSans", sans-serif;
   font-weight: 700;
   margin-bottom: 90px;
 
@@ -16,6 +16,7 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -15px;
   }
 
   &__item {
@@ -55,6 +56,7 @@
     font-size: 20px;
     position: relative;
     z-index: 2;
+    @include overflow(2)
   }
 
   &__descr {

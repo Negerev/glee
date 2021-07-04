@@ -2,7 +2,7 @@
   padding-top: 110px;
 
   &__top {
-    font-family: "DMSans";
+    font-family: "DMSans", sans-serif;
     font-weight: 700;
     display: flex;
     justify-content: space-between;
@@ -68,7 +68,7 @@
 
     &__link {
       display: block;
-      font-family: "DMSans";
+      font-family: "DMSans", sans-serif;
       font-weight: 500;
       font-size: 18px;
       margin: auto 0;

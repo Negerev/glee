@@ -1,21 +1,26 @@
 .partners {
   background-color: $orange-30;
   height: 250px;
+  display: flex;
+  align-items: center;
 
   &--big {
     height: 436px;
     padding-top: 260px;
     margin-top: -170px;
-  }
-
-  &__items {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: block;
   }
 
   &__item {
+   display: flex !important;
+   justify-content: center;
+   align-items: center;
+   height: 100px;
+  }
+
+  &__img {
     max-width: 200px;
     max-height: 100px;
+    object-fit: scale-down;
   }
 }

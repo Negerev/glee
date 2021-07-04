@@ -35,18 +35,17 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 
-  &--large {
-    max-width: 1230px;
-  }
-
   &--big {
     max-width: 1800px;
   }
 }
 
-.logo__img {
-  max-width: 150px;
-  max-height: 40px;
+.logo {
+
+  &__img {
+    max-width: 150px;
+    max-height: 40px;
+  }
 }
 
 .title {
@@ -72,8 +71,9 @@ body {
 }
 
 .link {
+  display: inline-block;
   position: relative;
-  padding: 20px 40px 20px 25px;
+  padding: 20px 82px 20px 25px;
   background-color: $blue-30;
   color: $white;
   border: 1px solid transparent;
@@ -92,11 +92,10 @@ body {
   }
 
   &--slider {
-    width: 200px;
+    padding-right: 96px;
   }
 
-  &--product-accent {
-    width: 180px;
+  &--transparent {
     background-color: transparent;
     border-color: $blue-50;
     border-radius: 5px;

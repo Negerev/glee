@@ -1,5 +1,15 @@
 @font-face {
   font-family: "Rubik";
+  font-weight: 300;
+  font-style: normal;
+  src:
+    url('../fonts/Rubik-Light.woff2') format('woff2'),
+    url('../fonts/Rubik-Light.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
   font-weight: 400;
   font-style: normal;
   src:
@@ -50,8 +60,8 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?en900');
-  src:  url('../fonts/icomoon.eot?en900#iefix') format('embedded-opentype'),
+  src: url('../fonts/icomoon.eot?en900');
+  src: url('../fonts/icomoon.eot?en900#iefix') format('embedded-opentype'),
     url('../fonts/icomoon.ttf?en900') format('truetype'),
     url('../fonts/icomoon.woff?en900') format('woff'),
     url('../fonts/icomoon.svg?en900#icomoon') format('svg');
@@ -60,24 +70,24 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+// [class^="icon-"], [class*=" icon-"] {
+//   /* use !important to prevent issues with browser extensions that change fonts */
+//   font-family: 'icomoon' !important;
+//   speak: never;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-variant: normal;
+//   text-transform: none;
+//   line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+//   /* Better Font Rendering =========== */
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
 
-.icon-calendar:before {
-  content: "\f073";
-}
-.icon-user-o:before {
-  content: "\f2c0";
-}
+// .icon-calendar:before {
+//   content: "\f073";
+// }
+// .icon-user-o:before {
+//   content: "\f2c0";
+// }

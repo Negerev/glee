@@ -1,0 +1,35 @@
+.conditions {
+  padding-top: 115px;
+
+  &__title {
+    margin-bottom: 23px;
+    color: $blue-80;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__list {
+    list-style: decimal-leading-zero;
+    padding-left: 30px;
+    counter-reset: item;
+  }
+
+  &__list,
+  &__text {
+    margin-bottom: 65px;
+  }
+
+  &__item {
+    padding-left: 10px;
+  }
+
+  &__item::marker {
+   font-family: "DMSans", sans-serif;
+   font-weight: 500;
+  }
+
+  &__item,
+  &__text p {
+    margin-bottom: 20px;
+  }
+}

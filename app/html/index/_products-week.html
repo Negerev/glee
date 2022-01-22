@@ -1,0 +1,138 @@
+<section class="products-week" data-ref="products-week">
+  <div class="container">
+    <h2 class="products-week__title title">
+      Products of the week
+    </h2>
+    <ul class="products-week__btns mix-filter">
+      <li class="mix-filter__item">
+        <button class="mix-filter__btn" type="button" data-filter="all">
+          All
+        </button>
+      </li>
+      <li class="mix-filter__item">
+        <button class="mix-filter__btn" type="button" data-filter=".furnitures">
+          Furnitures
+        </button>
+      </li>
+      <li class="mix-filter__item">
+        <button class="mix-filter__btn" type="button" data-filter=".chairs">
+          Chairs
+        </button>
+      </li>
+      <li class="mix-filter__item">
+        <button class="mix-filter__btn" type="button" data-filter=".lighting">
+          Lighting
+        </button>
+      </li>
+      <li class="mix-filter__item">
+        <button class="mix-filter__btn" type="button" data-filter=".decor">
+          Decor
+        </button>
+      </li>
+    </ul>
+
+    <ul class="products-week__items">
+      <li class="products-week__item mix chairs lighting">
+        @@include('../parts/_product-card.html', {
+          "title": "Wooden radio",
+          "link": "1"
+        })
+      </li>
+
+      <li class="products-week__item mix furnitures">
+        @@include('../parts/_product-card.html', {
+          "title": "Wooden chair",
+          "link": "2"
+        })
+      </li>
+
+      <li class="products-week__item mix">
+        @@include('../parts/_product-card.html', {
+          "title": "White chair",
+          "link": "3"
+        })
+      </li>
+
+      <li class="products-week__item mix furnitures">
+         @@include('../parts/_product-card.html', {
+          "title": "Retro table",
+          "link": "4"
+        })
+      </li>
+
+      <li class="products-week__item mix furnitures chairs">
+         @@include('../parts/_product-card.html', {
+          "title": "Wooden radio",
+          "link": "5"
+        })
+      </li>
+
+      <li class="products-week__item mix chairs decor">
+         @@include('../parts/_product-card.html', {
+          "title": "Wooden chair",
+          "link": "6"
+        })
+      </li>
+
+      <li class="products-week__item mix chairs">
+         @@include('../parts/_product-card.html', {
+          "title": "White chair",
+          "link": "7"
+        })
+      </li>
+
+      <li class="products-week__item mix lighting decor">
+         @@include('../parts/_product-card.html', {
+          "title": "Retro table",
+          "link": "8"
+        })
+      </li>
+    </ul>
+  </div>
+
+  <div class="container container--big">
+    <ul class="products-week__list">
+      <li class="products-week__list-item">
+        <article class="products-week__article">
+          <img class="products-week__image" src="images/products/lamp1.png" alt="lamp">
+          <h3 class="products-week__name">
+            Mirum Notare Tellus
+          </h3>
+          <div class="products-week__text">
+            <p>
+              LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
+            </p>
+          </div>
+          <a class="link link--transparent" href="#">
+            View More
+            <svg class="link__icon">
+              <use xlink:href="images/sprite.svg#arrows-right"></use>
+            </svg>
+          </a>
+        </article>
+
+      </li>
+
+      <li class="products-week__list-item">
+        <article class="products-week__article">
+          <img class="products-week__image" src="images/products/lamp2.png" alt="lamp">
+          <h3 class="products-week__name">
+            Malesuada Tempor Euismod
+          </h3>
+          <div class="products-week__text">
+            <p>
+              50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
+            </p>
+          </div>
+          <a class="link link--transparent" href="#">
+            View More
+            <svg class="link__icon">
+              <use xlink:href="images/sprite.svg#arrows-right"></use>
+            </svg>
+          </a>
+        </article>
+
+      </li>
+    </ul>
+  </div>
+</section>

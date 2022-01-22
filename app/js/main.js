@@ -15,6 +15,8 @@ $(function () {
   });
 
 
+
+
   var containerEl1 = document.querySelector('[data-ref="products-week"]');
   var containerEl2 = document.querySelector('[data-ref="design"]');
 

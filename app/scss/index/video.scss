@@ -4,11 +4,9 @@
   width: 100%;
   position: relative;
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
-    width: 127px;
-    height: 127px;
-    background-image: url(../images/icons/play.png);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -18,8 +16,24 @@
     transition: transform 0.3s;
   }
 
+  &::before {
+    width: 127px;
+    height: 127px;
+    background-image: url(../images/icons/play-bg.svg);
+  }
+
+  &::after {
+    width: 22px;
+    height: 25px;
+    background-image: url(../images/icons/play.svg);
+  }
+
   &:hover::before {
-    transform: scale(1.15);
+    transform: scale(0.75);
+  }
+
+  &:hover::after {
+    transform: scale(1.25);
   }
 
   &:active::before {

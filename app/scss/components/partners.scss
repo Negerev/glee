@@ -1,15 +1,15 @@
+.articles + .partners {
+  height: 436px;
+  padding-top: 260px;
+  margin-top: -170px;
+  display: block;
+}
+
 .partners {
   background-color: $orange-30;
   height: 250px;
   display: flex;
   align-items: center;
-
-  &--big {
-    height: 436px;
-    padding-top: 260px;
-    margin-top: -170px;
-    display: block;
-  }
 
   &__item {
    display: flex !important;

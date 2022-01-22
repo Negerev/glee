@@ -1,0 +1,159 @@
+.contacts {
+  padding-top: 120px;
+
+  &__title {
+    text-align: center;
+    font-family: "DMSans", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: $blue-50;
+    margin-bottom: 70px;
+
+
+    span {
+      font-size: 16px;
+      color: $blue-30;
+      display: block;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+
+  &__item {
+    padding: 70px 50px 75px;
+    max-width: 370px;
+    background-color: #fbfbfb;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+
+    &:hover {
+      border-color: $blue-30;
+
+      .contacts__icon {
+        background-color: $blue-30;
+
+        svg {
+          fill: $white;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    margin: 0 auto 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    background-color: #fff;
+    transition: background-color 0.4s;
+
+    svg {
+      fill: $blue-30;
+      transition: fill 0.4s;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 23px;
+    font-family: "DMSans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__text {
+    line-height: 1.8;
+    color: #565872;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 620px;
+
+  }
+
+  &__form-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    .contacts__label {
+      max-width: 300px;
+    }
+
+  }
+
+  &__label {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      right: 27px;
+      top: 20px;
+      font-family: "icomoon";
+    }
+
+    &--name::after {
+      content: "\e971";
+    }
+    &--email::after {
+      content: "\e945";
+    }
+    &--message::after {
+      content: "\e900";
+    }
+    
+  }
+
+  &__input {
+    max-width: 300px;
+  }
+
+  &__textarea {
+    height: 175px;
+    margin-bottom: 30px;
+    resize: none;
+   
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    padding: 15px 40px 20px 20px;
+    background-color: #fafafa;
+    border: 2px solid transparent;
+    outline-style: none;
+    transition: border-color 0.3s;
+
+    &:focus {
+      border-color: $blue-30;
+    }
+  }
+
+
+  &__form-btn {
+    padding: 18px 55px 18px 45px;
+    @extend %btn;
+  }
+
+  
+}
+#map {
+  width: 500px;
+  height: 350px;
+}

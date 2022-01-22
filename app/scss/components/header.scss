@@ -15,8 +15,16 @@
   color: $blue-50;
   padding-left: 145px;
 
+  @include r ($xxl) {
+    padding-left: 0;
+  }
+
   &__item:not(:last-child) {
     margin-right: 36px;
+
+    @include r ($xl) {
+      margin-right: 22px;
+    }
   }
 }
 
